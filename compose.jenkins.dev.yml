@@ -17,8 +17,7 @@ services:
       - jenkins_home:/var/jenkins_home
       - jenkins_backup:/var/jenkins_backup
       
-      # User defined
-      - ${USERPROFILE}/Documents/GitHub:/opt/github
+      - ${USERPROFILE}/Documents/GitHub:/mnt/Github
     networks:
       - jenkins_network
     healthcheck:
