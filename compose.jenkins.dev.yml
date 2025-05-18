@@ -13,10 +13,10 @@ services:
       # Fixed the quoting issue in JAVA_OPTS
       - JAVA_OPTS=-Djenkins.install.runSetupWizard=true -Dhudson.model.DirectoryBrowserSupport.CSP="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"
       - TZ=UTC
+      - GIT_REPO_PATH=/mnt/Github
     volumes:
       - jenkins_home:/var/jenkins_home
       - jenkins_backup:/var/jenkins_backup
-      
       - ${USERPROFILE}/Documents/GitHub:/mnt/Github
     networks:
       - jenkins_network
