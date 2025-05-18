@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  deploy_jenkins_dev:
+    desc: Deploy Jenkins dev environment
+    cmds:
+      - docker compose -f compose.jenkins.dev.yml down
+      - docker compose -f compose.jenkins.dev.yml up -d
