@@ -1,4 +1,4 @@
-name: general-jenkins-dev
+name: general-jenkins-prod
 
 services:
   jenkins:
